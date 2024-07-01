@@ -1,6 +1,6 @@
 header {
     padding: 15px 0;
-    background: #000;
+    background: #16272D;
     position: fixed;
     width: 100%;
     z-index: 2;
@@ -56,7 +56,7 @@ li.nav-item {
 }
 
 .banner.home_banner::before {
-    background: #0000002e;
+    background: #00000073;
     position: absolute;
     content: '';
     height: 100%;
@@ -103,7 +103,7 @@ li.nav-item {
     font-size: 70px;
     color: #fff;
     font-weight: 700;
-    background: #00000094;
+    background: #0000008f;
     padding: 20px;
     border-radius: 10px;
 }
@@ -159,19 +159,19 @@ img {
     font-size: 34px;
     font-weight: 500;
     margin-bottom: 10px;
-    color: #000;
+    color: #16272D;
 }
 
 .bottom_btn a {
-    color: #000;
-    border: 1px solid #000;
+    color: #16272D;
+    border: 1px solid #16272D;
     padding: 10px 30px;
     text-decoration: none;
     transition: all 0.4s;
 }
 
 .bottom_btn a:hover {
-    background: #000;
+    background: #16272D;
     color: #FFF;
 }
 
@@ -196,7 +196,7 @@ img {
 
 .amenities h3 {
     margin: 20px 0;
-    color: #000;
+    color: #16272D;
 }
 
 .amenities:hover h3 {
@@ -204,7 +204,7 @@ img {
 }
 
 .amenities:hover {
-    background: #000;
+    background: #16272D;
     color: #FFf;
 }
 
@@ -241,7 +241,7 @@ img {
 }
 
 .about_card h3 {
-    color: #000;
+    color: #16272D;
     margin-bottom: 20px;
 }
 
@@ -257,7 +257,7 @@ img {
 .about_us_cards::before {
     position: absolute;
     content: '';
-    background-color: #000000bd;
+    background-color:#16272D;
     height: 100%;
     width: 100%;
     top: 0;
@@ -279,7 +279,7 @@ img {
 }
 
 .about_card:hover p {
-    color: #000;
+    color: #16272D;
 }
 
 .common_input input {
@@ -307,7 +307,7 @@ img {
     font-size: 20px;
     color: #707070;
     text-decoration: unset;
-    background: #000;
+    background: #16272D;
     border: unset;
     color: #fff;
     transition: all 0.4s;
@@ -316,8 +316,8 @@ img {
 }
 
 .common_btn_contact a:hover {
-    color: #000;
-    border: 1px solid #000;
+    color: #16272D;
+    border: 1px solid #16272D;
     background-color: #fff;
 }
 
@@ -335,14 +335,14 @@ img {
 button.accordion-button {
     font-size: 20px;
     font-weight: 600;
-    color: #000;
+    color: #16272D;
 
 }
 
 .accordion-item:first-of-type>.accordion-header .accordion-button {
     font-size: 20px;
     font-weight: 600;
-    color: #000;
+    color: #16272D;
 
 
 }
@@ -362,12 +362,12 @@ button.accordion-button {
 }
 
 .accordion-button:not(.collapsed) {
-    color: #000;
+    color: #16272D;
     box-shadow: unset;
 }
 
 .priavcy_wrap h3 {
-    color: #000;
+    color: #16272D;
     margin-bottom: 20px;
 }
 
@@ -403,7 +403,7 @@ button.accordion-button {
 }
 
 .footer {
-    background: #000;
+    background: #16272D;
 }
 
 
@@ -460,7 +460,7 @@ nav .logo a {
 }
 
 .social_icon ul li .three_icon {
-    background: #000 !important;
+    background: #16272D !important;
 }
 
 .social_icon ul li .four_icon {
@@ -529,3 +529,9 @@ a.navbar-brand img {
     max-width: 1920px !important;
 }
 
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #C7A97F;
+}
+.nav-link:focus, .nav-link:hover {
+    color: #C7A97F;
+}
