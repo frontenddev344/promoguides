@@ -551,3 +551,6 @@ a.navbar-brand img {
 .navbar-toggler-icon {
     filter: invert(1);
 }
+.contact_us_text {
+    padding-bottom: 60px;
+}
