@@ -547,3 +547,6 @@ a.navbar-brand img {
 .full_text h2 {
     color: #c7a97f;
 } 
+.navbar-toggler-icon {
+    filter: invert(1);
+}
