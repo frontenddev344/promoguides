@@ -67,23 +67,23 @@ li.nav-item {
 }
 
 .lx_banner {
-    background-image: url(../images/lx_bg.jfif) !important;
+    background-image: url(../images/lx_bg.jpg) !important;
 }
 
-.amenties {
-    background-image: url(../images/amenties_bg.jpg) !important;
+.un_banner{
+    background-image: url(../images/un_new_bg.jpg) !important;
 }
 
-.about_bg {
-    background-image: url(../images/ab_bg\ \(1\).jpg) !important;
+.cs_bg {
+    background-image: url(../images/cas_bg.jpg) !important;
 }
 
-.about_bg {
-    background-image: url(../images/ab_bg\ \(1\).jpg) !important;
+.off_bg {
+    background-image: url(../images/of2.jpg) !important;
 }
 
 .contact_us_bg {
-    background-image: url(../images/contact_us.jpg) !important;
+    background-image: url(../images/contact_bg.jpg) !important;
 }
 
 .faq_bg {
@@ -91,11 +91,11 @@ li.nav-item {
 }
 
 .privacy_banner {
-    background-image: url(../images/privacy-policy-bnr.jpg) !important;
+    background-image: url(../images/privacy_bg.webp) !important;
 }
 
 .term_banner {
-    background-image: url(../images/terms-banner.jpg) !important;
+    background-image: url(../images/term-banner.jpg) !important;
 }
 
 
@@ -561,6 +561,3 @@ a.navbar-brand img {
     max-width: 1920px !important;
 }
 
-.social_footer ul li:last-child a {
-    text-transform: lowercase;
-}
