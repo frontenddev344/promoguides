@@ -371,38 +371,6 @@ button.accordion-button {
     margin-bottom: 20px;
 }
 
-/* .privacy_bg {
-    background-image: url(../images/young-businesswoman-reading-application-form\ \(1\).jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    z-index: 0;
-}
-.privacy_bg::before{
-    position: absolute;
-    content: '';
-    background-color: #0000009e;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    top: 0;
-    left: 0;
-} */
-/* .priavcy_wrap p {
-    color: #fff;
-}
-.priavcy_wrap ul li {
-    color: #fff;
-}
-.priavcy_wrap  h4 {
-    color: #fff;
-    margin: 10px 0;
-}
-.priavcy_wrap  li {
-    color: #fff;
-} */
-
 
 .social_footer ul {
     display: flex;
