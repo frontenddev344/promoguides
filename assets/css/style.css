@@ -103,7 +103,7 @@ li.nav-item {
     font-size: 70px;
     color: #c7a97f;
     font-weight: 700;
-    background: #0000008f;
+    background: unset;
     padding: 20px;
     border-radius: 10px;
 }
