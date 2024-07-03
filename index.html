@@ -19,12 +19,50 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    /* cookies css star here */
+    #cookies-popup {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      color: #fff;
+      padding: 20px 20px;
+      text-align: center;
+      box-shadow: rgb(0 0 0 / 20%) 0px 0px 15px;
+      /* display: none;*/
+    }
+    #cookies-popup p {
+      margin: 0;
+      color: #000;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+    #cookies-popup button {
+      background-color: #16272d;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      margin-top: 10px;
+      border-radius: 0px;
+      border: 1px solid #16272d;
+      font-size: 1rem;
+    }
+    #accept-cookies:hover, #refuse-cookies:hover {
+      background: transparent;
+      border-color: #16272d;
+      color: #16272d;
+      /* border-color: #3486a1; */
+    }
+    /* cookies css end here */
+  </style>
+
 </head>
 
 <body>
@@ -122,7 +160,18 @@
     </div>
   </div>
 
-
+    <!-- cookies section start here -->
+    <div id="cookies-popup">
+      <p>
+        Cookies are used by us to enhance your online experience. These are little text files stored on your
+        computer. If you continue to use our website, you consent to the use of cookies. Changes to your
+        cookie preferences can be made in the browser's settings. To learn more, check our privacy policy by
+        clicking here.
+      </p>
+      <button id="accept-cookies">Accept</button>
+      <button id="refuse-cookies">Decline</button>
+    </div>
+    <!-- cookies section end here -->
   <div class="footer padding">
     <div class="container">
 
@@ -175,6 +224,25 @@
   </div>
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
   <script src="./assets/js/script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+       var acceptCookiesBtn = document.getElementById("accept-cookies");
+       var refuseCookiesBtn = document.getElementById("refuse-cookies");
+       var cookiesPopup = document.getElementById("cookies-popup");
+
+       acceptCookiesBtn.addEventListener("click", function () {
+           cookiesPopup.style.display = "none";
+           // You can add code here to set a cookie to remember the user's choice
+           document.cookie = "cookiesAccepted=true; max-age=" + 60*60*24*365 + "; path=/"; // 1 year
+       });
+
+       refuseCookiesBtn.addEventListener("click", function () {
+           cookiesPopup.style.display = "none";
+           // You can add code here to set a cookie to remember the user's choice
+           document.cookie = "cookiesAccepted=false; max-age=" + 60*60*24*365 + "; path=/"; // 1 year
+       });
+   });
+</script>
 </body>
 
 </html>

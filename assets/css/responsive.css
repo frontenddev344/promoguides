@@ -65,6 +65,12 @@
     li.nav-item.first_li_a {
         margin-top: 30px;
     }
+    .lower_banner .row {
+        flex-direction: column-reverse;
+    }
+    .lower_banner .right_side {
+        margin-bottom: 30px;
+    }
 
 }
 
@@ -84,11 +90,11 @@
     }
 
     a.navbar-brand img {
-        max-width: 200px;
+        max-width: 80px;
     }
 
     .logo_footer .logo a img {
-        width: 200px;
+        width: 120px;
     }
 }
 
